@@ -457,6 +457,89 @@ body.theme-luka strong {
   color: var(--luka-text);
 }
 
+/* ---- Paper cards ---- */
+body.theme-luka .paper-card {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--luka-border);
+}
+
+body.theme-luka .paper-card:last-child {
+  border-bottom: none;
+}
+
+body.theme-luka .paper-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--luka-text);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+body.theme-luka .paper-authors {
+  font-size: 14px;
+  color: var(--luka-secondary);
+  margin-bottom: 8px;
+}
+
+body.theme-luka .paper-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+body.theme-luka .status-badge {
+  display: inline-block;
+  padding: 2px 12px;
+  background: var(--luka-accent-light);
+  color: var(--luka-accent-dark);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+body.theme-luka .paper-abstract {
+  margin-top: 4px;
+}
+
+body.theme-luka .paper-abstract summary {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--luka-accent);
+  user-select: none;
+  list-style: none;
+}
+
+body.theme-luka .paper-abstract summary::-webkit-details-marker {
+  display: none;
+}
+
+body.theme-luka .paper-abstract summary::after {
+  content: "▸";
+  font-size: 11px;
+  transition: transform 0.2s ease;
+}
+
+body.theme-luka .paper-abstract[open] summary::after {
+  transform: rotate(90deg);
+}
+
+body.theme-luka .paper-abstract .abstract-body {
+  margin-top: 10px;
+  padding: 12px 16px;
+  background: var(--luka-accent-light);
+  border-radius: 8px;
+  font-size: 13.5px;
+  color: var(--luka-secondary);
+  line-height: 1.75;
+}
+
 @media (max-width: 1080px) {
   body.theme-luka .nav-container {
     padding: 0 20px;
